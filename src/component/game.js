@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './board'
+import Header from './header'
 
 class Game extends React.Component {
   
@@ -88,6 +89,7 @@ class Game extends React.Component {
 
     return (
       <div className="game">
+        <Header />
         <div className="game-board">
           <Board
             squares={current.squares}
